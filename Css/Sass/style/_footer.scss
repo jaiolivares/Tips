@@ -1,0 +1,17 @@
+footer {
+    background-color: pink;
+
+    p {
+        background-color: yellow;
+        height: 50px + 50px;
+
+        &:hover{
+            background-color: blue;
+        }
+    }
+
+    a {
+        &:link {color: $primary-color;}
+        &:visited {color: orange;}
+    }
+}

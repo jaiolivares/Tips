@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./footer";
+
+@mixin bg-color($color: aqua) {
+    background-color: $color;
+}
+
+body {
+    @include bg-color($body-color);
+    //background-color: $body-color;
+}
+
+p {
+    @include bg-color(blue);
+    //background-color: $primary-color;
+}
+
+h1 {
+    background-color: $primary-color;
+}
+
+nav {
+    @extend footer;
+    p {
+        height: 200px;
+    }
+}
