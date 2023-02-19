@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./footer";
 
+//@mixin = funciones
 @mixin bg-color($color: aqua) {
     background-color: $color;
 }
@@ -20,6 +21,7 @@ h1 {
 }
 
 nav {
+    //@extend importar archivo _footer.scss
     @extend footer;
     p {
         height: 200px;
