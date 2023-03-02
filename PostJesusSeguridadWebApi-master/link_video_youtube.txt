@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=taa49l4wmuE
+
+Canal: Tech Riders -España
+Implementar seguridad Oauth 2 en un servicio Web Api
+
+
+https://github.com/jgiganto/PostJesusSeguridadWebApi
