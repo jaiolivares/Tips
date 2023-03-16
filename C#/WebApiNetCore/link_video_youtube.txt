@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=WwTshWuJjf8&t=1200s
+
+Canal: The Coder Cave esp
+Cómo escribir una API Rest en 5 minutos con .Net Core y probarla con Postman
