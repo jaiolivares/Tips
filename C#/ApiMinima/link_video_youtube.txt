@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=L7qYEqnMYBs&t=1549s
+
+Canal: The Coder Cave esp
+.NET 6 + API Mínimas + Entity Framework + PostgreSQL - Crea una API Rest con PostgreSQL

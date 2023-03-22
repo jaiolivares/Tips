@@ -1,0 +1,16 @@
+Herramientas \ Administrador de paquetes NuGet \ Consola de Administrador de paquetes
+
+ls
+
+cd .\ApiMinima
+
+ls
+
+//Instalar
+dotnet tool install --global dotnet-ef
+
+dotnet ef migrations add firstmigration --project ApiMinima.csproj
+(si funciona se crea la carpeta "Migrations")
+
+dotnet ef database update firstmigration --project  ApiMinima.csproj
+(Comando que crea la BD y tablas definidas en las clases y contexto)
