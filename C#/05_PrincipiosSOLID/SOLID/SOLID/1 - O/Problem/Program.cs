@@ -4,7 +4,7 @@ namespace SOLID._1___O.Problem
 {
     internal class Program
     {
-        //public static void Main(string[] args)
+        //public static void Main()
         //{
         //    List<Order> orders = new List<Order>(); //Get orders from data source
 
