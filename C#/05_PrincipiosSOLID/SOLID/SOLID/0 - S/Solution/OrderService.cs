@@ -1,4 +1,6 @@
-﻿namespace SOLID._0___S.Solution
+﻿using SOLID.Model;
+
+namespace SOLID._0___S.Solution
 {
     internal class OrderService
     {
@@ -18,7 +20,7 @@
             _loggerService = loggerService;
         }
 
-        public void SaveOrder(Model.Order order)
+        public void SaveOrder(Order order)
         {
             try
             {

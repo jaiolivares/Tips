@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SOLID.Model;
 
 namespace SOLID._0___S.Problem
 {
     internal class OrderService
     {
-        private void SaveOrder(Model.Order order)
+        private void SaveOrder(Order order)
         {
             try
             {
                 this.InsertOrder(order);
 
-                Model.Invoice invoce = this.CreateInvoice(order);
+                Invoice invoce = this.CreateInvoice(order);
 
                 this.EmailInvoice(invoce);
 
@@ -26,19 +22,19 @@ namespace SOLID._0___S.Problem
             }
         }
 
-        private bool InsertOrder(Model.Order order)
+        private bool InsertOrder(Order order)
         {
             //Code to Insert the Order on the database
             return true;
         }
 
-        private Model.Invoice CreateInvoice(Model.Order order)
+        private Invoice CreateInvoice(Order order)
         {
             //Code to Create Invoice
-            return new Model.Invoice();
+            return new Invoice();
         }
 
-        private bool EmailInvoice(Model.Invoice invoce)
+        private bool EmailInvoice(Invoice invoce)
         {
             //Code to email Invoice
             return true;

@@ -1,13 +1,15 @@
-﻿namespace SOLID._0___S.Solution
+﻿using SOLID.Model;
+
+namespace SOLID._0___S.Solution
 {
     internal interface INotificationService
     {
-        bool EmailInvoice(Model.Invoice invoice);
+        bool EmailInvoice(Invoice invoice);
     }
 
     internal class NotificationService : INotificationService
     {
-        public bool EmailInvoice(Model.Invoice invoice)
+        public bool EmailInvoice(Invoice invoice)
         {
             //Code to email Invoice
             return true;
