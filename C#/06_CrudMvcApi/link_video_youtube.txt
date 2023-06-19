@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=jTveozl4cQY&t=746s
+
+Canal: hdeleon.net
+Crear CRUD en MVC Api con C# .Net, Entity Framework y Sql Server
+
+En este video te enseñare como puedes hacer un CRUD con la tecnología MVC Api de .Net, utilizaremos Entity Framework, Sql server y generaremos los controladores por medio de scaffolding.
