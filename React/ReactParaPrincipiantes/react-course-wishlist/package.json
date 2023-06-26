@@ -1,14 +1,24 @@
 {
   "name": "react-course-wishlist",
   "version": "1.0.0",
-  "description": "",
+  "description": "An exercise for an introduction to React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html"
   },
-  "author": "",
+  "author": "Javier Olivares (Alvaro Yuste - alvaroyuste.com)",
   "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "parcel-bundler": "^1.12.5"
   }
 }
