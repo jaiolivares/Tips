@@ -4,11 +4,13 @@
   "description": "An exercise for an introduction to React",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "format": "prettier --write \"*.{js,jsx,json,css}\""
   },
   "author": "Javier Olivares (Alvaro Yuste - alvaroyuste.com)",
   "license": "ISC",
   "dependencies": {
+    "prettier": "^2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -20,5 +22,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "parcel-bundler": "^1.12.5"
+  },
+  "prettier" :{	
+    "semi": true
   }
 }
