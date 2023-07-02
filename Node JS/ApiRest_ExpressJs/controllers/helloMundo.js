@@ -1,5 +1,6 @@
 function getHelloMundo(req, res) {
-  res.status(200).send({ msg: "HelloMundo desde controllers" });
+  console.log("Servidor: HelloMundo desde controllers");
+  res.status(200).send({ msg: "Cliente: HelloMundo desde controllers" });
 }
 
 module.exports = { getHelloMundo };

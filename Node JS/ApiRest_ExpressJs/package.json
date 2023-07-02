@@ -10,9 +10,10 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^5.13.3"
   },
-  "devDependencies": {    
-    "nodemon": "^2.0.22" 
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
