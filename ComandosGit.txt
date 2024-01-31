@@ -1,0 +1,12 @@
+*Merge a Master (Main)
+-git branch
+-git checkout main
+-git merge -m "Comentario del Merge a Master" [BranchOrigen]
+-git merge [BranchOrigen]
+-git push
+
+*Nuevo Branch
+-git checkout -b [NombreNuevoBranch]
+
+*Commit
+git commit -m "Fin TipoDeTransaccion"
