@@ -2,6 +2,7 @@
 using System.Net.Http;
 using Newtonsoft.Json.Linq;
 using System.Text;
+using RestSharp;
 
 namespace ConsumirApi
 {
@@ -9,12 +10,27 @@ namespace ConsumirApi
     {
         private static void Main(string[] args)
         {
+            #region HttpClient
+
             ApiGet_Obtener();
             ApiPost_Insert();
             ApiPut_Update();
             ApiPatch_Update();
             ApiDelete_Delete();
+
+            #endregion HttpClient
+
+            #region RestClient
+
+            GetItem_ObtenerId(10);
+            GetItems_ObtenerTodos();
+            PostItem_Insertar();
+            PostItem_InsertarConJson();
+
+            #endregion RestClient
         }
+
+        #region HttpClient
 
         private static void ApiGet_Obtener()
         {
@@ -125,5 +141,50 @@ namespace ConsumirApi
                 Console.WriteLine(r);
             }
         }
+
+        #endregion HttpClient
+
+        #region RestClient
+
+        private static void GetItem_ObtenerId(int id)
+        {
+            var client = new RestClient("https://jsonplaceholder.typicode.com");
+            var request = new RestRequest($"todos/{id}", Method.Get);
+            var response = client.Execute(request);
+            Console.WriteLine(response.Content);
+        }
+
+        private static void GetItems_ObtenerTodos()
+        {
+            var client = new RestClient("https://jsonplaceholder.typicode.com");
+            var request = new RestRequest($"todos", Method.Get);
+            var response = client.Execute(request);
+            Console.WriteLine(response.Content);
+        }
+
+        private static void PostItem_Insertar()
+        {
+            var client = new RestClient("https://jsonplaceholder.typicode.com");
+            var request = new RestRequest($"posts", Method.Post);
+
+            request.AddParameter("title", "Codigo titulo");
+            request.AddParameter("body", "bodysss");
+
+            var response = client.Execute(request);
+            Console.WriteLine(response.Content);
+        }
+
+        private static void PostItem_InsertarConJson()
+        {
+            var client = new RestClient("https://jsonplaceholder.typicode.com");
+            var request = new RestRequest($"posts", Method.Post);
+
+            request.AddJsonBody(new { title = "titulo nuevo", body = "nombre de Body", uerId = 999 });
+
+            var response = client.Execute(request);
+            Console.WriteLine(response.Content);
+        }
+
+        #endregion RestClient
     }
 }

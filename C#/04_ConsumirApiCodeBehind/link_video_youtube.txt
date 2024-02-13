@@ -1,4 +1,0 @@
-https://www.youtube.com/watch?v=P522qOKYzOM
-
-Canal: Coding con C
-COMO hacer PETICIONES a una API ➤ CURSO en C#
