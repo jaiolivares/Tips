@@ -15,19 +15,21 @@
 // 	"method": "GET"
 // };
 
-
 // data: "{'idsEncriptado': '" + this.id.split('_')[1] + "'}",
 $.ajax({
-    type: "GET",
-    url: "https://randomuser.me/api/",
-    contentType: "application/json; charset=utf-8",
-    dataType: "json",
-    async: false,
-    success: function (data) {
-        console.log(data);
-    },
-    error: function (xhr, ajaxOptions, thrownError) {
-        console.log(xhr.status);
-        console.log(thrownError);
-    }
+  type: "GET",
+  url: "https://randomuser.me/api/",
+  contentType: "application/json; charset=utf-8",
+  dataType: "json",
+  async: false,
+  beforeSend: () => {
+    $("#cargando").html("Loading...");
+  },
+  success: function (data) {
+    console.log(data);
+  },
+  error: function (xhr, ajaxOptions, thrownError) {
+    console.log(xhr.status);
+    console.log(thrownError);
+  },
 });
