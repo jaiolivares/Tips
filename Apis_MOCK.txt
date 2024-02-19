@@ -4,3 +4,7 @@ https://jsonplaceholder.typicode.com/
 
 https://randomuser.me/
 	https://randomuser.me/api/
+	
+	
+https://api.gael.cloud/
+	https://api.gael.cloud/general/public/monedas
