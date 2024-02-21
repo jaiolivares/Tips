@@ -1,3 +1,9 @@
 # Tips
 
-Consumir con Fetch o JQuery desde JavaScript
+Consumir con
+
+- XMLHttpRequest
+- Fetch
+- JQuery
+
+desde JavaScript
