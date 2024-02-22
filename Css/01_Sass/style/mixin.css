@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*mixin básico*/
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*mixin con MediaQuery*/
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+@media screen and (max-width: 480px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 0em;
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+@media screen and (max-width: 480px) {
+  section {
+    grid-template-columns: 1fr;
+    gap: 0em;
+  }
+}
+
+/*mixin con MediaQuery y contenido*/
+article {
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  article {
+    width: 100%;
+  }
+}/*# sourceMappingURL=mixin.css.map */

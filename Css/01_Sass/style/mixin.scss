@@ -1,0 +1,56 @@
+/*mixin básico*/
+@mixin flexible($dis, $direction, $corte, $just, $align) {
+  display: $dis;
+  flex-flow: $direction $corte;
+  justify-content: $just;
+  align-items: $align;
+}
+
+main {
+  @include flexible(flex, row, nowrap, center, center);
+}
+
+section {
+  @include flexible(flex, column, nowrap, flex-start, flex-start);
+}
+
+// -------------
+
+/*mixin con MediaQuery*/
+@mixin grid($columns, $espacio) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $espacio;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 0em;
+  }
+}
+
+main {
+  @include grid(4, 1em);
+}
+
+section {
+  @include grid(3, 2em);
+}
+
+// -------------
+
+/*mixin con MediaQuery y contenido*/
+@mixin mobile($media: 480px) {
+  @media screen and (max-width: $media) {
+    @content;
+  }
+}
+
+article {
+  width: 25%;
+  @include mobile(768px) {
+    width: 50%;
+  }
+  @include mobile() {
+    width: 100%;
+  }
+}
