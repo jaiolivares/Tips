@@ -1,0 +1,27 @@
+@mixin flex() {
+  background: orange;
+  border: 1px solid green;
+}
+
+header {
+  color: black;
+  h1 {
+    color: red;
+  }
+  nav {
+    @include flex();
+  }
+}
+
+a {
+  color: black;
+  &:hover {
+    color: gray;
+  }
+  &:active {
+    color: green;
+  }
+  &:visited {
+    color: blue;
+  }
+}

@@ -1,0 +1,23 @@
+header {
+  color: black;
+}
+header h1 {
+  color: red;
+}
+header nav {
+  background: orange;
+  border: 1px solid green;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  color: gray;
+}
+a:active {
+  color: green;
+}
+a:visited {
+  color: blue;
+}/*# sourceMappingURL=anidacion.css.map */
