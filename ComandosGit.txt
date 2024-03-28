@@ -10,3 +10,6 @@
 
 *Commit
 git commit -m "Fin TipoDeTransaccion"
+
+*Eliminar branch
+git branch -d [NombreRama]
