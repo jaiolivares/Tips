@@ -1,0 +1,2 @@
+Repara errores
+npm audit fix --force
