@@ -8,8 +8,22 @@
 *Nuevo Branch
 -git checkout -b [NombreNuevoBranch]
 
+*Crear varias ramas
+-git checkout -b prod && git checkout -b qa && git checkout -b dev
+
+*Cambiar de rama:
+-git checkout NOMBRE_RAMA
+
 *Commit
-git commit -m "Fin TipoDeTransaccion"
+-git commit -m "Fin TipoDeTransaccion"
 
 *Eliminar branch
-git branch -d [NombreRama]
+-git branch -d [NombreRama]
+
+*Sincronizar rama:
+-git pull
+
+*Realizar commit:
+-git add .
+-git commit -m “first commit”
+-git push origin NOMBRE_RAMA
