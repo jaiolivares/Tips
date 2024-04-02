@@ -1,0 +1,5 @@
+*** Windows PowerShell
+
+
+-Reemplazar parte del nombre de un archivo
+get-childitem *.sql | foreach { rename-item $_ $_.Name.Replace("dbo.", "") }
