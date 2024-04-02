@@ -1,0 +1,41 @@
+En C#, las diferencias entre push(), peek(), y pop() son claras cuando se utilizan en contextos específicos, principalmente en el manejo de pilas (stacks) y colas (queues), que son estructuras de datos fundamentales en programación.
+
+Push() se utiliza en el contexto de una pila (stack). Agrega un elemento al tope de la pila.
+Por ejemplo, si tienes una pila llamada miPila, puedes agregar un elemento utilizando miPila.Push(elemento).
+
+Peek() también se usa en una pila (stack), pero no elimina el elemento del tope de la pila. Simplemente te permite ver el elemento que está en el tope sin sacarlo de la pila.
+Usando el mismo ejemplo de miPila, si deseas ver el elemento en el tope de la pila sin sacarlo, puedes hacerlo con miPila.Peek().
+
+Pop() se utiliza en una pila (stack) para eliminar y devolver el elemento en el tope de la pila.
+Siguiendo el ejemplo anterior, si deseas sacar el elemento del tope de la pila y obtenerlo, puedes hacerlo con miPila.Pop().
+Un ejemplo básico de cómo usar estas operaciones sería:
+
+
+---
+
+
+using System;
+using System.Collections;
+
+class Program
+{
+    static void Main()
+    {
+        // Crear una pila
+        Stack miPila = new Stack();
+
+        // Agregar elementos a la pila
+        miPila.Push("Uno");
+        miPila.Push("Dos");
+        miPila.Push("Tres");
+
+        // Mostrar el elemento en el tope de la pila sin sacarlo
+        Console.WriteLine("Elemento en el tope de la pila: " + miPila.Peek());
+
+        // Sacar y mostrar el elemento del tope de la pila
+        Console.WriteLine("Elemento sacado de la pila: " + miPila.Pop());
+
+        // Mostrar el nuevo elemento en el tope de la pila
+        Console.WriteLine("Elemento en el tope de la pila después de sacar uno: " + miPila.Peek());
+    }
+}
