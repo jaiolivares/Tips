@@ -1,0 +1,2 @@
+Instalar NestJs en PC
+>npm i -g @nestjs/cli

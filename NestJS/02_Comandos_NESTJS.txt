@@ -1,0 +1,5 @@
+Nuevo proyecto
+>nest new project-name
+
+Crear Controller con el nombre de "items"
+>nest g resource items
