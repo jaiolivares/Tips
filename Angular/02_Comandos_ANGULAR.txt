@@ -1,0 +1,6 @@
+Nuevo proyecto
+>ng new my-app
+
+Ejecutar proyecto
+>ng serve
+>ng serve --open (para abrir directamente el navedaor)
