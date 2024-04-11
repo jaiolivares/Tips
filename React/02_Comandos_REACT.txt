@@ -1,0 +1,5 @@
+Nuevo proyecto (con plantilla de Vite)
+>npm create vite@latest
+
+Ejecutar proyecto
+>npm run dev
