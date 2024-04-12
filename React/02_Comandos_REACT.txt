@@ -4,3 +4,11 @@ Nuevo proyecto (con plantilla de Vite)
 
 Ejecutar proyecto
 >npm run dev
+
+Para trabajar con las rutas (router), instalar react-dom
+>npm install react-router-dom
+
+Ui Material
+https://mui.com/material-ui/getting-started/installation/
+>npm install @mui/material @emotion/react @emotion/styled
+>npm install @mui/icons-material
