@@ -1,10 +1,18 @@
+Api de array simple
 https://jsonplaceholder.typicode.com/
 	https://jsonplaceholder.typicode.com/todos
 
 
+Api de usuarios
 https://randomuser.me/
 	https://randomuser.me/api/
 	
-	
+
+Api que use cuando entré a SegurosFalabella
 https://api.gael.cloud/
 	https://api.gael.cloud/general/public/monedas
+	
+
+Api de productos (carrito de compras)
+https://fakestoreapi.com/
+	https://fakestoreapi.com/products/1
