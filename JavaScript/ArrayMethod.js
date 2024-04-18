@@ -79,7 +79,7 @@ console.log(array1.fill(5, 1));
 console.log(array1.fill(6));
 // Expected output: Array [6, 6, 6, 6]
 
-//reduce: sumar, restar, multriplicar, dividir... todos los valores dentro del array
+//reduce: sumar, restar, multiplicar, dividir... todos los valores dentro del array
 const array4 = [1, 2, 3, 4];
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
