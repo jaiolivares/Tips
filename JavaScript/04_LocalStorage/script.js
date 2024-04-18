@@ -38,8 +38,10 @@ function PintarTabla() {
 btnEliminarStorage.addEventListener("click", (e) => {
   e.preventDefault();
   localStorage.setItem("lstAgregados", []);
+  localStorage.setItem("counter", 0);
   PintarTabla();
   ValorPorDefectoEnTxt();
+  document.getElementById("resultadoContador").innerHTML = 0;
 });
 
 formularioAgregar.addEventListener("submit", (e) => {
@@ -101,3 +103,21 @@ function TextAleatorio() {
   }
   return text;
 }
+
+var counter = localStorage.getItem("counter") || 0;
+
+//#region CONTADOR INCREMENTAR
+window.addEventListener("storage", (e) => {
+  if (e.key === "counter") {
+    const newCounterValue = +e.newValue;
+    document.getElementById("resultadoContador").innerHTML = newCounterValue;
+  }
+});
+
+document.getElementById("btnContador").addEventListener("click", (e) => {
+  counter = localStorage.getItem("counter") || 0;
+  counter++;
+  document.getElementById("resultadoContador").innerHTML = counter;
+  localStorage.setItem("counter", counter);
+});
+//#endregion CONTADOR INCREMENTAR
