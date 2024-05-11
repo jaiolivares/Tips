@@ -88,6 +88,13 @@ console.log("reduce -> " + sumWithInitial);
 console.log("máximo: " + array4.reduce((accumulator, currentValue) => Math.max(accumulator + currentValue)));
 // Expected output: 10
 
+//reduce: Buscar palabra más larga
+function palabraMasLarga(a, b) {
+  return a.length > b.length ? a : b;
+}
+const frase = "Esta es una prueba de palabras, abcdefghijklmn para comprara cuál es la que tiene mayor cantidad de letras.";
+console.log("reduce -> La palabra con más letras es: " + frase.split(" ").reduce(palabraMasLarga));
+
 //Obtener id mayor de Array
 const arrayObject = [
   { id: 1, nombre: "AA" },
@@ -103,3 +110,6 @@ var ids = arrayObject.map((x) => x.id);
 console.log("ids: " + ids);
 
 console.log("valor máximo: " + Math.max.apply(null, ids));
+
+//Crear valores o id random con UUID
+console.log("randomUUID: " + crypto.randomUUID());

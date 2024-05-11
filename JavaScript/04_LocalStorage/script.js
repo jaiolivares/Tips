@@ -30,7 +30,9 @@ function PintarTabla() {
   }
 
   if (lstAgregados.length > 0) {
-    let elementos = lstAgregados.map((x) => `<tbody id='tbody'><tr><td>${x.id}</td><td>${x.codigo}</td><td>${x.nombre}</td><td><button type='submit' class="btn btn-secondary" onClick="EliminarItem(${x.id})">Eliminar</td></tr></tbody>`).join("");
+    let elementos = lstAgregados
+      .map((x) => `<tbody id='tbody'><tr><td>${x.id}</td><td>${x.uuid}</td><td>${x.codigo}</td><td>${x.nombre}</td><td><button type='submit' class="btn btn-secondary" onClick="EliminarItem(${x.id})">Eliminar</td></tr></tbody>`)
+      .join("");
     elemntTbody.innerHTML = elementos;
   }
 }
@@ -66,6 +68,7 @@ function Agregar() {
 
   let newElemento = {
     id: id,
+    uuid: crypto.randomUUID(),
     codigo: codigo,
     nombre: nombre,
   };
