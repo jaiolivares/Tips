@@ -30,6 +30,12 @@ array = ["AA", "AA", "BB", "CC"];
 array.shift();
 console.log("shift -> " + array);
 
+//splice: Elimina el valor que buscas por el Index
+array = ["AA", "AA", "BB", "CC", "CC", "DD", "EE", "FF"];
+var indiceEncontrado = array.findIndex((x) => x === "BB");
+array.splice(indiceEncontrado, 1);
+console.log("splice -> " + array);
+
 //filter: Filtra elementos del array
 array = ["AA", "AA", "BB", "CC"];
 console.log("filter -> " + array.filter((array) => array === "AA"));
