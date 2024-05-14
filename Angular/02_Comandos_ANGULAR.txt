@@ -1,6 +1,13 @@
+Abrir carpreta en cmd
+> cd...
+
 Nuevo proyecto
 >ng new my-app
 
 Ejecutar proyecto
 >ng serve
 >ng serve --open (para abrir directamente el navedaor)
+
+Crear componente
+>ng generate component {nombre_componente}
+>ng g c {nombre_componente}
