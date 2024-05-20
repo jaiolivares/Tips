@@ -98,3 +98,25 @@ function ReversarArray(array) {
 }
 
 console.log("El array ordenado sin usar .reverse() es: " + ReversarArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]));
+
+//Función SerieFibonachi
+function SerieFibonachi(cantidadRegistros) {
+  let lstSerieFibo = [];
+
+  let valor1 = 0;
+  let valor2 = 1;
+  let resultado = valor1 + valor2;
+
+  lstSerieFibo.push(0);
+
+  for (let i = 0; i < cantidadRegistros - 1; i++) {
+    lstSerieFibo.push(resultado);
+    valor2 = valor1;
+    valor1 = resultado;
+    resultado = valor1 + valor2;
+  }
+
+  return lstSerieFibo;
+}
+
+console.log("Serie Fibonachi: " + SerieFibonachi(13));
