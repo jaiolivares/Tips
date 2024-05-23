@@ -8,5 +8,12 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <div class="container">
+  {{ variable_interpolada }}
+  <br />
+  <strong>ObjetoUnico:</strong>
+  {{ objetoUnico.nombre }}
+  <br />
+  <strong>Lista Array:</strong>
+  <p *ngFor="let item of array">{{ item.id + " -> " + item.Nombre }}</p>
   <app-peliculas></app-peliculas>
 </div>

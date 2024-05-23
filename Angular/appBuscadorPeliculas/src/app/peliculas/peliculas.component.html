@@ -1,6 +1,13 @@
-<h1>Buscar peliculas</h1>
-
+<hr />
 <div>
+  <p>ObjetoPersona: {{ persona.nombre }}</p>
+  <ul>
+    <p>Lista Personas</p>
+    <li *ngFor="let persona of objPersonas">
+      Nombre: {{ persona.nombre }} Id: {{ persona.id }} Estado:
+      {{ persona.estado }}
+    </li>
+  </ul>
   <input
     class="input-text"
     type="text"
@@ -9,6 +16,8 @@
   />
   <button class="btn btn-primary" (click)="searchMovies()">Buscar</button>
 </div>
+
+<h1>Buscar peliculas</h1>
 
 <div *ngIf="movies.length > 0">
   <h2>Resultados de la búsqueda:</h2>
