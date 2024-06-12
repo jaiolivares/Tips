@@ -1,0 +1,27 @@
+<div class="container">
+  <form [formGroup]="contactForm" class="row g-3 needs-validation" novalidate (submit)="enviar($event)">
+    <div class="mb-3">
+      <label for="validationCustom01" class="form-label">Email</label>
+      <input type="email" class="form-control" id="validationCustom01" placeholder="mail@mail.cl" formControlName="email" [ngClass]="{ 'is-invalid': hasErrors('email', 'required') || hasErrors('email', 'email') }" />
+      @if (hasErrors("email", "required")){
+      <span class="text-danger">Campo email requerido</span>
+      } @if (hasErrors("email","email")){
+      <span class="text-danger">Formato de email inválido</span>}
+    </div>
+    <div class="mb-3">
+      <label for="validationCustom05" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="validationCustom05" rows="5" formControlName="mensaje" [ngClass]="{ 'is-invalid': hasErrors('mensaje', 'required') || hasErrors('mensaje', 'minlength') }"></textarea>
+      @if (hasErrors("mensaje", "required")){
+      <span class="text-danger">Campo mensaje requerido</span>
+      } @if (hasErrors("mensaje","minlength")){
+      <span class="text-danger">Debe contener mínimo 10 caracteres</span>}
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+
+    <div>
+      <span>{{ resultado }}</span>
+    </div>
+  </form>
+</div>
