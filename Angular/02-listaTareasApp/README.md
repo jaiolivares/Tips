@@ -1,27 +1,46 @@
-# ListaTareasApp
+[<https://www.youtube.com/watch?v=soInCF7nbDw&t=27589s>](https://youtu.be/soInCF7nbDw?t=24695)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Canal: Sergie Code
 
-## Development server
+ANGULAR desde cero | Curso tutorial completo gratis por Sergie Code
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+¡El curso que tanto me pidieron llegó! Angular es un framework de código abierto en TypeScript mantenido por Google y una comunidad activa de desarrolladores. Diseñado para la creación eficiente de aplicaciones web dinámicas y de una sola página (SPA), Angular ofrece una estructura robusta basada en componentes.
 
-## Code scaffolding
+¡El curso de React ya superó ampliamente los 100k y muchísima gente me estaba pidiendo el de Angular y por fin ha llegado!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para poder tomar este curso debes saber HTML, CSS, JavaScript y Typescript y las 4 tecnologías tienen su curso completo en este canal. Te dejo la lista de reproducción a continuación:
+   • CURSOS COMPLETOS DE DESARROLLO WEB GR...  
 
-## Build
+Si este curso te ha servido asegúrate de suscribirte a mi canal para estar al tanto de los próximos, ya que pronto estaré subiendo los primeros pasos en librerías y Frameworks muy populares y con mucha salida laboral. Mi objetivo es que puedas adquirir los conocimientos necesarios para crear tus propias aplicaciones web sin tener que invertir dinero en costosos cursos de programación.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-- Secciones del curso --
+00:00:00 Saludo inicial
+00:00:52 Instalacion programas
+00:16:42 Angular CLI
+00:27:31 Primera APP en Angular
+00:46:55 Módulos (ngModule)
+00:58:48 Componentes
+01:32:51 Enlace de Datos (Binding)
+01:49:04 Comunicación entre Componentes (Input Output)
+02:13:28 Servicios y Dependencias
+02:34:56 Directivas
+02:42:29 Pipes (Filtros)
+02:57:11 Enrutamiento (routing)
+03:05:51 Bootstrap
+03:15:26 Navegación y Rutas
+03:21:15 Router y ActivatedRoute
+03:30:56 Estructuras de Control (ngIf, ngFor, ngSwitch, ng-container)
+03:54:54 Formularios
+04:37:32 Ciclos de Vida (ngOnInit, ngOnChanges, ngOnDestroy)
+05:00:51 APIs y HTTP Client (conexión backend o APIs)
+05:55:10 Novedades Angular 16 (Signals, Standalone)
+06:29:12 Novedades Angular 17 (nueva sintaxis)
+06:51:35 Proyecto: Lista de Tareas (Usando Angular 16/17)
+07:14:08 Proyecto: Landing Page (Usando Angular 17)
+07:58:00 Despedida
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ --  Enlaces importantes para el curso  --
+📂 Gist de Instalaciones necesarias para el curso: <https://gist.github.com/sergiecode/1e>...
+📂Repositorio de Estilos para App Lista Tareas: <https://github.com/sergiecode/base-li>...
+📂Repositorio final de Lista de Tareas (finalizado): <https://github.com/sergiecode/lista-t>...
+📂Repositorio final de Landing Page (finalizada): <https://github.com/sergiecode/landing>...
