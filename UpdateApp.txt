@@ -1,0 +1,5 @@
+CMD (Como administrador)
+
+winget update
+
+winget upgrade --all
