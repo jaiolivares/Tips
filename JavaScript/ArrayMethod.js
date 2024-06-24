@@ -1,8 +1,8 @@
 //Wiki arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
 const crearArray = [
-  { title: "My New Post", body: "This is my first post!", Codigo: "111", Nombre: "nombre uno", Activo: "1" },
-  { title: "My New Post", body: "This is my first post!", Codigo: "222", Nombre: "nombre dos", Activo: "0" },
+    { title: "My New Post", body: "This is my first post!", Codigo: "111", Nombre: "nombre uno", Activo: "1" },
+    { title: "My New Post", body: "This is my first post!", Codigo: "222", Nombre: "nombre dos", Activo: "0" },
 ];
 
 //console.log(crearArray);
@@ -32,7 +32,7 @@ console.log("shift -> " + array);
 
 //splice: Elimina el valor que buscas por el Index
 array = ["AA", "AA", "BB", "CC", "CC", "DD", "EE", "FF"];
-var indiceEncontrado = array.findIndex((x) => x === "BB");
+var indiceEncontrado = array.findIndex((x) => x === "AA");
 array.splice(indiceEncontrado, 1);
 console.log("splice -> " + array);
 
@@ -96,19 +96,19 @@ console.log("máximo: " + array4.reduce((accumulator, currentValue) => Math.max(
 
 //reduce: Buscar palabra más larga
 function palabraMasLarga(a, b) {
-  return a.length > b.length ? a : b;
+    return a.length > b.length ? a : b;
 }
 const frase = "Esta es una prueba de palabras, abcdefghijklmn para comprara cuál es la que tiene mayor cantidad de letras.";
 console.log("reduce -> La palabra con más letras es: " + frase.split(" ").reduce(palabraMasLarga));
 
 //Obtener id mayor de Array
 const arrayObject = [
-  { id: 1, nombre: "AA" },
-  { id: 9, nombre: "BB" },
-  { id: 11, nombre: "CC" },
-  { id: 2, nombre: "DD" },
-  { id: 7, nombre: "EE" },
-  { id: 14, nombre: "FF" },
+    { id: 1, nombre: "AA" },
+    { id: 9, nombre: "BB" },
+    { id: 11, nombre: "CC" },
+    { id: 2, nombre: "DD" },
+    { id: 7, nombre: "EE" },
+    { id: 14, nombre: "FF" },
 ];
 console.log(arrayObject);
 
@@ -119,3 +119,19 @@ console.log("valor máximo: " + Math.max.apply(null, ids));
 
 //Crear valores o id random con UUID
 console.log("randomUUID: " + crypto.randomUUID());
+
+//editar: Editar todos los registros
+const arrayObjectEdit = [
+    { id: 1, nombre: "AA" },
+    { id: 9, nombre: "BB" },
+    { id: 11, nombre: "CC" },
+    { id: 2, nombre: "DD" },
+    { id: 7, nombre: "EE" },
+    { id: 14, nombre: "FF" },
+];
+
+arrayObject.forEach((x) => {
+    x.nombre = "ZZ";
+});
+
+console.log("Array editado" + JSON.stringify(arrayObject));

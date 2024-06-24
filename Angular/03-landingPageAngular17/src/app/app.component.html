@@ -1,0 +1,19 @@
+<div class="general-styles">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Venta Productos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" routerLink="" [ngClass]="{ active: menuOption === 'home' }" (click)="onOption('home')">Home</a>
+          <a class="nav-link" aria-current="page" routerLink="products" [ngClass]="{ active: menuOption === 'product' }" (click)="onOption('product')">Product</a>
+          <a class="nav-link" aria-current="page" routerLink="contact" [ngClass]="{ active: menuOption === 'contact' }" (click)="onOption('contact')">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <router-outlet />
+</div>

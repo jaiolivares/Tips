@@ -1,0 +1,15 @@
+<div class="container">
+  @if (loading){
+  <h3>Cargando producto...</h3>
+  } @if (!loading){
+  <div class="card" style="width: 18rem">
+    <img src="{{ product?.image }}" class="card-img-top" alt="product?.title" />
+    <div class="card-body">
+      <h5 class="card-title">{{ product?.title }}</h5>
+      <p class="card-text">{{ product?.price | currency }}</p>
+      <p class="card-text">{{ product?.description }}</p>
+      <a class="btn btn-primary" (click)="volver()">Volver</a>
+    </div>
+  </div>
+  }
+</div>
