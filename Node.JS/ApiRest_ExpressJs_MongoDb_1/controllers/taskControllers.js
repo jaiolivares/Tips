@@ -1,5 +1,9 @@
 const Task = require("../models/taskModels");
 
+async function getHealth(){
+  res.status(200).send({msg: "Controller OK"});
+}
+
 async function createTask(req, res) {
   console.log("Servidor: Creando nuestra primera tarea");
   console.log("Servidor: ParametrosJSON: " + req.body);
@@ -95,4 +99,4 @@ async function deleteTask(req, res) {
   }
 }
 
-module.exports = { createTask, getTasks, getTask, updateTask, deleteTask };
+module.exports = { getHealth, createTask, getTasks, getTask, updateTask, deleteTask };

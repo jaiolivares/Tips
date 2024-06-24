@@ -11,3 +11,7 @@ Ejecutar proyecto
 Crear componente
 >ng generate component {nombre_componente}
 >ng g c {nombre_componente}
+
+Ejecutar proyecto
+>ng serve --watch
+>npm start
