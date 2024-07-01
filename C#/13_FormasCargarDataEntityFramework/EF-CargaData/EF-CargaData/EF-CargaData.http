@@ -1,0 +1,6 @@
+@EF_CargaData_HostAddress = http://localhost:5104
+
+GET {{EF_CargaData_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
