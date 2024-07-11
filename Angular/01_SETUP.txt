@@ -10,3 +10,18 @@ En PowerShell:
 "Puede utilizar Angular CLI para crear proyectos, generar código de biblioteca y aplicación y realizar una variedad de tareas de desarrollo continuas, como pruebas, agrupación e implementación."
 
 npm install -g @angular/cli
+
+
+
+Desinstalar angular
+>npm uninstall -g @angular/cli
+
+Luego limpiar la cache
+>npm cache verify
+>npm cache clean --force
+
+Cambiarse de versión, a una más antigual
+Primero hay que ver la versión correcta de Node.js con nvm
+
+Para usar una versión específica de Angular CLI en un proyecto, navega al directorio del proyecto y ejecuta:
+npx -p @angular/cli@12 ng serve
