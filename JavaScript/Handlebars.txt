@@ -1,0 +1,51 @@
+    if (Handlebars) {
+      Handlebars.registerHelper("HlpEsPar", HelperEsPar);
+
+      Handlebars.registerHelper("ifEquals", function (arg1, arg2, options) {
+        return arg1 == arg2 ? options.fn(this) : options.inverse(this);
+      });
+    }
+	
+//#region HelpersHandlebars
+
+var HelperEsPar = function (index) {
+  return index % 2 === 0;
+};
+
+// Handlebars.registerHelper("ifEquals", function (arg1, arg2, options) {
+//   return arg1 == arg2 ? options.fn(this) : options.inverse(this);
+// });
+
+//#endregion HelpersHandlebars
+	
+	
+
+
+{{#ifEquals (HlpEsPar @index) true}}
+        <div class="box-2-sect-1 box-full mb-2">
+          <div class="box-1-grey-sect-2 box-grey-new {{#if @first}}back-first{{/if}}" >
+            <div class="row text-center">
+              <div class="col-5">{{letra}}{{turno}}</div>
+              <div class="col-2 align-center">
+                <img src="assets/img/arrow.png" class="pl-4" />
+              </div>
+              <div class="col-5">{{idEsc}}</div>
+            </div>
+          </div>
+{{/ifEquals}}
+
+{{@index}}{{@index}}
+
+{{#ifEquals (HlpEsPar @index) false}} impar {{/ifEquals}}
+
+{{#ifEquals (HlpEsPar @index) false}}
+          <div class="box-1-grey-sect-2 box-grey-new" >
+            <div class="row text-center">
+              <div class="col-5">{{letra}}{{turno}}</div>
+              <div class="col-2 align-center">
+                <img src="assets/img/arrow.png" class="pl-4" />
+              </div>
+              <div class="col-5">{{idEsc}}</div>
+            </div>
+          </div>
+{{/ifEquals}}

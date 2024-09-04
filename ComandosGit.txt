@@ -27,5 +27,8 @@
 -git init
 -git add .
 -git commit -m “first commit”
--git remote add origin (pegar url si no está linqueado a git previamente)
+-*git remote add origin (pegar url si no está linqueado a git previamente)
 -git push origin NOMBRE_RAMA
+
+*Filename too long in Git for Windows
+git config --system core.longpaths true
