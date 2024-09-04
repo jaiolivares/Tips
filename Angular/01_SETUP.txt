@@ -25,3 +25,10 @@ Primero hay que ver la versión correcta de Node.js con nvm
 
 Para usar una versión específica de Angular CLI en un proyecto, navega al directorio del proyecto y ejecuta:
 npx -p @angular/cli@12 ng serve
+
+
+Ejecuta: npm list -g @angular/cli para ver qué versión está instalada globalmente.
+
+
+Si hay una discrepancia entre la versión global y la local, puedes actualizar la versión local con:
+npm install @angular/cli@13 --save-dev
