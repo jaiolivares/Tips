@@ -22,3 +22,7 @@ Api de peliculas
 api_key=e99d615df8a92dc31427eb6004865bff 
 	https://developer.themoviedb.org/docs/search-and-query-for-details
 	https://api.themoviedb.org/3/search/movie?query=Jack+Reacher&api_key=e99d615df8a92dc31427eb6004865bff 
+	
+
+Api-Varias
+	https://fakeapi.platzi.com/
