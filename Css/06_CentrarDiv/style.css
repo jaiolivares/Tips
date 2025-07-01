@@ -1,0 +1,88 @@
+.container {
+    padding:  1em;
+    width: 80%;
+    height: 150px;
+    border: 5px solid;
+    background-color: slateblue;
+    margin-bottom: 10px;
+}
+
+img {
+    border: 2px solid #fff;
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    color: #fff;
+}
+
+/*--------------- Manera 1 ---------------*/
+.container1 {
+    position: relative;
+}
+
+.img1 {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+/*--------------- Manera 2 ---------------*/
+.container2 {
+    position: relative;
+}
+
+.img2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--------------- Manera 3 ---------------*/
+.container3 {
+    display: grid;
+    place-items: center;
+}
+
+.img3 {
+}
+
+/*--------------- Manera 4 ---------------*/
+.container4 {
+    display: grid;
+}
+
+.img4 {
+    place-self: center;
+}
+
+/*--------------- Manera 5 ---------------*/
+.container5 {
+    display: grid;
+}
+
+.img5 {
+    margin: auto;
+}
+
+/*--------------- Manera 6 ---------------*/
+.container6 {
+    display: flex;
+}
+
+.img6 {
+    margin: auto;
+}
+
+
+/*--------------- Manera 7 ---------------*/
+.container7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img7 {
+}
