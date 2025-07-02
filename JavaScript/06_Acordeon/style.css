@@ -1,0 +1,40 @@
+img {
+    height: 16px;
+    color: #fff;
+}
+
+.accordion_item {
+    width: 300px;
+    padding: 0;
+    list-style: none;
+    background-color: #d732bc;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.accordion_name {
+    padding: 1rem;
+    cursor: pointer;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion_content {
+    overflow: hidden;
+    padding: 0 2rem;
+    line-height: 2;
+    height: 0;
+    transition: .3s height;
+}
+
+.accordion_content::before, .accordion_content::after {
+    content: "";
+    display: block;
+    height: 20px;
+    background-color: transparent;
+}
